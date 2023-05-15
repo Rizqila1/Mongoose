@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "33dcd626-4d31-4b65-a33e-216f0ebdb13b",
+		"name": "Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26232022"
+	},
+	"item": [
+		{
+			"name": "Mongoose",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Gadget",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Rizqila/OneDrive/Pictures/Screenshot/DSC09735.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2001/api/v2/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2001",
+							"path": [
+								"api",
+								"v2",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All DAta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2001/api/v2/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2001",
+							"path": [
+								"api",
+								"v2",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2001/api/v2/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2001",
+							"path": [
+								"api",
+								"v2",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "646204e605974330d63e6b1b"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2001/api/v2/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2001",
+							"path": [
+								"api",
+								"v2",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "646233f4171eb8efdb908ae5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Rahman",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"src": "/C:/Users/Rizqila/OneDrive/Pictures/Screenshot/DSC09735.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2001/api/v2/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2001",
+							"path": [
+								"api",
+								"v2",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "19"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
